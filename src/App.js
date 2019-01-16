@@ -1,8 +1,13 @@
-import React from 'react'
+import React    from 'react'
+import Movies   from './containers/Movies/index'
+import Provider from './Store/Providers/MoviesProvider'
 
 class App extends React.Component {
 	render() {
-		return <div>Hello  {this.props.name}</div>;
+		return <Provider>
+			<Movies/>
+		</Provider>
 	}
 }
+
 export default App
